@@ -1,6 +1,6 @@
 /* ========== TrangChu Page ========== */
 .trangchu {
-  padding: 30px 0 50px;
+  padding: 30px 20px 50px;
 }
 
 /* ========== Section Titles ========== */
@@ -369,6 +369,7 @@
   .courses-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .qa-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -378,12 +379,15 @@
   .tkb-content {
     grid-template-columns: 1fr;
   }
+
   .dvc-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .section-title h2 {
     font-size: 22px;
   }
@@ -393,9 +397,11 @@
   .dvc-grid {
     grid-template-columns: 1fr;
   }
+
   .courses-grid {
     grid-template-columns: 1fr;
   }
+
   .qa-grid {
     grid-template-columns: 1fr;
   }

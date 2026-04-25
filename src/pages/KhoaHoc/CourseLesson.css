@@ -1,0 +1,313 @@
+.course-lesson-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.cl-header {
+    height: 60px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #334155;
+    flex-shrink: 0;
+}
+
+.cl-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    width: 200px;
+}
+
+.cl-back-btn:hover {
+    color: #f8fafc;
+}
+
+.cl-title-area {
+    flex: 1;
+    text-align: center;
+}
+
+.cl-course-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cl-progress-area {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.cl-progress-bar-bg {
+    width: 100px;
+    height: 6px;
+    background: #334155;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cl-progress-bar-fill {
+    height: 100%;
+    background: #10b981;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.cl-progress-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.cl-main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Left: Player Section */
+.cl-player-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.cl-video-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.cl-video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cl-no-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #64748b;
+    font-style: italic;
+}
+
+.cl-lesson-footer {
+    max-width: 1000px;
+    margin: 24px auto 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #334155;
+}
+
+.cl-lesson-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cl-action-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.cl-lock-notice {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.cl-btn-complete {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background: #475569;
+    color: #94a3b8;
+    transition: all 0.3s ease;
+}
+
+.cl-btn-complete.active {
+    background: #2563eb;
+    color: white;
+}
+
+.cl-btn-complete.active:hover {
+    background: #1d4ed8;
+}
+
+.cl-btn-completed {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.cl-nav-buttons {
+    max-width: 1000px;
+    margin: 24px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cl-nav-btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.cl-nav-btn.outline {
+    border: 1px solid #475569;
+    color: #cbd5e1;
+}
+
+.cl-nav-btn.outline:hover {
+    background: #334155;
+    color: white;
+}
+
+.cl-nav-btn.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.cl-nav-btn.primary:hover {
+    background: #1d4ed8;
+}
+
+/* Right: Sidebar */
+.cl-sidebar {
+    width: 360px;
+    background: #1e293b;
+    border-left: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+}
+
+.cl-sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #334155;
+}
+
+.cl-sidebar-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.cl-curriculum-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cl-chapter-block {
+    border-bottom: 1px solid #334155;
+}
+
+.cl-chapter-title {
+    padding: 16px 20px;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.cl-lesson-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cl-lesson-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cl-lesson-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+}
+
+.cl-lesson-item.active {
+    background: rgba(37, 99, 235, 0.1);
+    color: white;
+    border-left: 3px solid #3b82f6;
+    padding-left: 17px;
+}
+
+.cl-lesson-status {
+    margin-top: 2px;
+}
+
+.text-green { color: #10b981; }
+.text-blue { color: #3b82f6; }
+.text-gray { color: #475569; }
+
+.cl-lesson-name {
+    flex: 1;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+/* Loaders & errors */
+.cl-loading, .cl-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #0f172a;
+    color: #94a3b8;
+    font-size: 1.2rem;
+}

@@ -63,6 +63,16 @@ function Navbar() {
             {tab.label}
           </NavLink>
         ))}
+        {(JSON.parse(localStorage.getItem('userRoles') || '[]').includes('Teacher') || 
+          JSON.parse(localStorage.getItem('userRoles') || '[]').includes('Admin')) && (
+          <NavLink
+            to="/teacher/grading"
+            className={({ isActive }) => `nav-tab${isActive ? ' active' : ''}`}
+            style={{ borderLeft: '1px solid rgba(255,255,255,0.2)', marginLeft: '10px', paddingLeft: '15px' }}
+          >
+            CHẤM ĐIỂM
+          </NavLink>
+        )}
       </div>
     </nav>
   );

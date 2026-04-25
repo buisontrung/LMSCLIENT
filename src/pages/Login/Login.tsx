@@ -74,6 +74,8 @@ const Login: React.FC = () => {
         // Navigate based on roles
         if (roles.includes('Admin')) {
           navigate('/admin');
+        } else if (roles.includes('Teacher')) {
+          navigate('/teacher');
         } else {
           navigate('/');
         }
